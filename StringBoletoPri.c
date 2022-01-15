@@ -1,15 +1,12 @@
 #include<stdio.h>
 #include<string.h>// para a string
-#include <stdlib.h>//para a função atoi
-
-
+#include <stdlib.h>//para a funÃ§Ã£o atoi
 
 int main(){
 
     char boleto[3], codigo[53], banco[4], numero[11];
     int i, l, c=0, iValor;
     float valorBoleto, valorMulta;
-
 
     printf("Se for boleto vencido, digite sim e para finalizar digite Fim:");
     scanf("%s", boleto);
@@ -18,7 +15,6 @@ int main(){
 
     while (strcmp(boleto,"fim")!=0){
         printf("\nDigite o codigo de barras do boleto:");
-
         gets(codigo);
         fflush(stdin);
     for (i=0;i<3;i++){
@@ -34,7 +30,7 @@ int main(){
         printf("Banco do boleto: Santander\n");
      }
      if(strcmp(banco,"104")==0){
-        printf("Banco do boleto: Caixa Econômica Federal\n");
+        printf("Banco do boleto: Caixa EconÃ´mica Federal\n");
      }
      if(strcmp(banco,"341")==0){
         printf("Banco do boleto: Itau\n");
